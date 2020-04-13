@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  background: #23424a;
+  color: white;
+
+  width: 80%;
+  margin: 0 auto;
+
+  padding: 2em;
+  /* 2. Comment out fixed height to avoid text overflow when screen size is too small */
+  /* height: 300px; */
+}
+
+/* 1. Added 50% width to ensure that content is always 50% wide of its parent (i.e. container)  */
+.intro-content {
+  width: 50%;
+}

@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+.container {
+  background-color: #23424a;
+  color: white;
+  /* Commented out height & Added padding */
+  /* height: 300px; */
+  padding: 3em;
+  margin: 0 auto;
+  width: 60%;
+}
