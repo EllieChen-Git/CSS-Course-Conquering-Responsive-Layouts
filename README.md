@@ -60,4 +60,50 @@
 
 ---
 
+#### Day 04 - CSS Units: vh, vw, vmin, vmax
+
+- **Reference video: [CSS Units: vh, vw, vmin, vmax](https://www.youtube.com/watch?v=IWFqGsXxJ1E)**
+
+- 'vh' and 'vw' are based on the '% of the viewport' (while '%' in 'width' and 'height' is based on the parent element)
+
+- 'vw' is super handy for setting up the font-size of your titles (it's responsive to your viewport width). You can build a set size of a very small screen and a set size of a very large screen, but anything in between can be tackled by this 'vw'.
+
+```css
+.hero-title {
+  font-size: 8vw;
+}
+```
+
+- 'vmin' looks at the smaller of the two units
+
+- 'vmax' looks at the bigger of the two units
+
+#### Day 04 (additional) - Box-sizing
+
+(why everyoen sets 'box-sizing: border-box' to universal selector '\*')
+
+- **Reference video**: [box-sizing: border-box explained](https://www.youtube.com/watch?v=WlGQdgy-M6w)
+
+- By default, box-sizing is set to 'content-box'
+- By changing it to 'border-box': paddings and borders will now be included inside the elements (makes your styling more predictable)
+
+```css
+* {
+  box-sizing: border-box;
+}
+
+/* Another way to do it: To avoid accidentally setting 'box-sizing' in certain element to overwrite the universal selector on the top */
+* {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+```
+
+- **Additional Reading**: [Inheriting box-sizing Probably Slightly Better Best-Practice](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
+
+---
+
 ©2020 Ellie Chen - All Rights Reserved.
