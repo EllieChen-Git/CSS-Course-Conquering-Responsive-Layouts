@@ -54,9 +54,9 @@
 
 ---
 
-#### Day 03 - fixed 'max-width'
+#### Day 03 - Fixed 'max-width'
 
-- max-width: Set a 'fixed max-width' avoid things scratch out the whole screen when your screen size becomes larger
+- max-width: Set a 'fixed max-width' avoid things scratch out the whole screen when your screen size becomes too large.
 
 ---
 
