@@ -16,19 +16,19 @@
 
 ## Lesson
 
-#### 0413 - 01 Percentage vs Fixed Widths
+#### Day 01 - 01 Percentage vs Fixed Widths
 
 - Use '%' instead of 'fixed widths': Block elements by default are 100% to their parent.
 
-#### 0413 - 02 Paddings vs Fixed Heights
+#### Day 01 - 02 Paddings vs Fixed Heights
 
 - Use 'padding' instead of 'fixed heights'.
 
 ---
 
-#### 0414 em vs rem
+#### Day 02 - em vs rem
 
-- Reference video: [CSS em and rem explained](https://www.youtube.com/watch?v=_-aDOAMmDHI&feature=youtu.be)
+- **Reference video: [CSS em and rem explained](https://www.youtube.com/watch?v=_-aDOAMmDHI&feature=youtu.be)**
 
 - **em**
 
@@ -51,6 +51,12 @@
   - If you want the consistency of spacing (margins) & paddings, then use rem. (If you want to use a more adoptable spacing & paddings, then consider using 'em'.)
 
 **Conclusion**: Using em and rem would be extremely useful with 'media query' (compared to the fixed units 'px'). You might be able to simply change the font-size of the parent element, and all the other properties (paddings, margins) will adapt to different sizes based on the screen sizes.
+
+---
+
+#### Day 03 - fixed 'max-width'
+
+- max-width: Set a 'fixed max-width' avoid things scratch out the whole screen when your screen size becomes larger
 
 ---
 
