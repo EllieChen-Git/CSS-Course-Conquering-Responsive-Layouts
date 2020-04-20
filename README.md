@@ -20,6 +20,15 @@
 
 - Use '%' instead of 'fixed widths': Block elements by default are 100% to their parent.
 
+- Set margin to centre the element
+
+```css
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+```
+
 #### Day 01 - 02 Avoiding to set heights(Paddings vs Fixed Heights)
 
 - Use 'padding' instead of 'fixed heights'.
@@ -29,6 +38,8 @@
 #### Day 02 - em vs rem
 
 - **Reference video: [CSS em and rem explained](https://www.youtube.com/watch?v=_-aDOAMmDHI&feature=youtu.be)**
+
+- **Reference video**: [Why you shouldn't set font-sizes using em](https://www.youtube.com/watch?time_continue=142&v=pautqDqa54I&feature=emb_logo)
 
 - **em**
 
@@ -103,6 +114,67 @@ html {
 ```
 
 - **Additional Reading**: [Inheriting box-sizing Probably Slightly Better Best-Practice](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
+
+#### Day 05-07 - Challenge #3
+
+- Initial setup of the CSS file
+
+```css
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+```
+
+- How to use Google fonts
+
+1. Go to the Google fonts and pick the [font](https://fonts.google.com/specimen/Roboto?sidebar.open&selection.family=Roboto:wght@300;900) and then copy the embedded code.
+2. HTML
+
+```html
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap"
+  rel="stylesheet"
+/>
+```
+
+3. CSS
+
+```css
+.container {
+  font-family: "Roboto", sans-serif;
+}
+```
+
+- Remember to use width (% to parent), margin (0 auto), padding, fixed max-width
+
+- How to style a link as a button
+
+```css
+a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #38cfd9;
+  border: #38cfd9;
+  border-radius: 31.5px;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 16px 48px;
+  letter-spacing: 0.05em;
+  color: black;
+}
+
+a:hover,
+a:focus {
+  opacity: 0.75;
+}
+```
 
 ---
 
