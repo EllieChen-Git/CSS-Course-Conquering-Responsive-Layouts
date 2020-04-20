@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  /* By default, width is 100%: To keep the green background 100% to the body  */
+  margin: 0 auto;
+  background: #23424a;
+  color: white;
+  padding: 50px 0;
+}
+
+.intro-container {
+  width: 80%; /* To keep the intro container 80% width to 'container' */
+  margin: 0 auto; /* To centre 'intro-container' */
+  max-width: 750px; /* To avoid over-stretch of 'intro-container' when screen becomes too big */
+}
+.intro-content {
+  width: 50%;
+  /* To keep 'intro-cotent' 50% width of 'intro-container' */
+}
+
+.more-content {
+  /* Same format as 'intro-container' to keep the alignment */
+  width: 80%;
+  margin: 0 auto;
+  max-width: 750px;
+}

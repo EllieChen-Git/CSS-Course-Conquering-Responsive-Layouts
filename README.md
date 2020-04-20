@@ -16,11 +16,11 @@
 
 ## Lesson
 
-#### Day 01 - 01 Percentage vs Fixed Widths
+#### Day 01 - 01 Using percentages for widths(Percentage vs Fixed Widths)
 
 - Use '%' instead of 'fixed widths': Block elements by default are 100% to their parent.
 
-#### Day 01 - 02 Paddings vs Fixed Heights
+#### Day 01 - 02 Avoiding to set heights(Paddings vs Fixed Heights)
 
 - Use 'padding' instead of 'fixed heights'.
 
@@ -54,7 +54,7 @@
 
 ---
 
-#### Day 03 - Fixed 'max-width'
+#### Day 03 - Using fixed 'max-width'
 
 - max-width: Set a 'fixed max-width' avoid things scratch out the whole screen when your screen size becomes too large.
 

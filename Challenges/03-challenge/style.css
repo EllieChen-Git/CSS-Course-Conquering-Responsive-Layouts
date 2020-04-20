@@ -2,32 +2,32 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: sans-serif;
-}
-
 .container {
-  width: 100%; /* To keep the green background 100% to the body  */
-  margin: 0 auto;
   background: #23424a;
-  color: white;
-  padding: 50px 0;
+  color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
 }
 
-.intro-container {
-  width: 80%; /* To keep the intro container 80% width to 'container' */
-  margin: 0 auto; /* To centre 'intro-container' */
-  max-width: 600px; /* To avoid over-stretch of 'intro-container' when screen becomes too big */
-}
-.intro-content {
+.content {
+  max-width: 750px;
   width: 50%;
-  /* To keep 'intro-cotent' 50% width of 'intro-container' */
+  padding: 80px 60px;
 }
 
-.more-content {
-  /* Same format as 'intro-container' to keep the alignment */
-  width: 80%;
-  margin: 0 auto;
-  max-width: 600px;
+p {
+  padding-bottom: 50px;
+}
+
+a {
+  background: #38cfd9;
+  border: #38cfd9;
+  border-radius: 31.5px;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 16px 48px;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: black;
 }
