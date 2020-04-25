@@ -115,6 +115,8 @@ html {
 
 - **Additional Reading**: [Inheriting box-sizing Probably Slightly Better Best-Practice](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
 
+---
+
 #### Day 05-07 - Challenge #3
 
 - Initial setup of the CSS file
@@ -174,6 +176,75 @@ a:hover,
 a:focus {
   opacity: 0.75;
 }
+```
+
+---
+
+#### Day 08 - Flexbox
+
+- 'display: flex': Change the element to a flex container, and the children elements inside become 'flex items'.
+- By default, div has 100% width.
+- By default, 'flex-direction' = 'row'.
+- By default, flex items want to be as small as they can (depends on the size of the HTML elements inside the div). So by setting 'width: 100%' of 'flex items', the child elements will display equally no matter the content size of the HTML elements.
+
+```css
+.row {
+  display: flex; /* By setting 'display: flex', we change this element to a flex container */
+  flex-direction: row; /* Default: 'flex-direction' = 'row */
+}
+
+.col {
+  /* these are 'flex items', children of 'flex container' */
+  width: 100%;
+}
+```
+
+- Adding space on flex items: .col + .col
+
+```css
+.col + .col {
+  /* .col + .col: Only applies to '.col' when it has a '.col' before it (i.e. our 2nd & 3rd .col) */
+  margin-left: 30px;
+}
+```
+
+```css
+```
+
+```css
+```
+
+```css
+```
+
+```css
+```
+
+```css
+```
+
+```css
+```
+
+```css
+```
+
+```css
+```
+
+```css
+```
+
+```css
+```
+
+```css
+```
+
+```css
+```
+
+```css
 ```
 
 ---

@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.row {
+  display: flex;
+  /* Gap: only supported by Firefox at the moment */
+  /* gap: 100px; */
+}
+
+.col + .col {
+  /* .col + .col: Only applies to '.col' when it has a '.col' before it (i.e. our 2nd & 3rd .col) */
+  background: #18bc9c;
+  margin-left: 30px;
+}
+
+.col {
+  border: 1px solid blue;
+  width: 100%;
+}
