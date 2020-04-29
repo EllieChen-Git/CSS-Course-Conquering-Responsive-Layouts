@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="hero">
-      <div class="container">
+      <div class="container row">
         <div class="hero__text">
           <h1>Responsive layouts don’t have to be a struggle</h1>
           <p>
@@ -22,14 +22,14 @@
           </p>
           <a href="#" class="btn">I want to learn</a>
         </div>
+        <img class="hero__img" src="./brown.jfif" alt="brown bear" />
       </div>
     </div>
     <section class="three-col">
       <!-- 1) Delete 'row' div and move 'row' in with 'container' -->
       <!-- Container: size & position, row: display flex -->
-
       <div class="container row">
-        <!-- <div class="row"> -->
+        <!-- 1) 'Row' by convention somtimes is named 'd-flex' -->
         <div class="col">
           <h2>Cheap</h2>
           <p>
@@ -54,13 +54,11 @@
             ad minim veniam.
           </p>
         </div>
-        <!-- </div> -->
       </div>
     </section>
 
     <section class="two-col">
       <div class="container row">
-        <!-- <div class="row"> -->
         <div class="col">
           <h2>Cheap</h2>
           <p>
@@ -77,7 +75,6 @@
             ad minim veniam.
           </p>
         </div>
-        <!-- </div> -->
       </div>
     </section>
   </body>

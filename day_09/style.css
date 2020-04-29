@@ -1,24 +1,3 @@
-/* 
-////// For this challenge ///////
-
-- You will have to modify the HTML
-
-- You can add new classes in the HTML
-  if you need to
-
-// Requirements
-1. The headings in the first row must be
-   a different color
-2. The two .col at the bottom must go next
-   to one another
-3. The section at the bottom should have
-   a dark background color and a different
-   color of text
-4. I've removed the "gap" that I created,
-   so you'll have to add it back in
-
-   */
-
 *,
 *::before,
 *::after {
@@ -44,9 +23,7 @@ h1 {
 .row {
   /* display: flex => flex container */
   display: flex;
-
-  /* can't use yet */
-  /* gap: 100px; */
+  /* By default, the items inside flex-container will stretch to the same height */
 }
 
 .col {
@@ -69,6 +46,10 @@ h1 {
   width: 60%;
 }
 
+.hero__img {
+  align-self: flex-start;
+}
+
 .hero p {
   margin-bottom: 3em;
 }
@@ -79,12 +60,10 @@ h1 {
   padding: 3em 0;
 }
 
-/* Req 1 */
 .three-col h2 {
   color: #87629a;
 }
 
-/* Req 3 */
 .two-col {
   text-align: center;
   padding: 3em 0;
