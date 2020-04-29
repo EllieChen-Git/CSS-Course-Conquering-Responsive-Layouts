@@ -12,6 +12,8 @@ body {
 
 h1 {
   font-size: 3rem;
+  margin-top: 0;
+  /* So that your h1 text will start from the top of the div (w/o the default margin of h1) */
 }
 
 .container {
@@ -24,6 +26,7 @@ h1 {
   /* display: flex => flex container */
   display: flex;
   /* By default, the items inside flex-container will stretch to the same height */
+  justify-content: space-between; /* Add space in between all the items */
 }
 
 .col {
@@ -48,6 +51,7 @@ h1 {
 
 .hero__img {
   align-self: flex-start;
+  width: 20%;
 }
 
 .hero p {
