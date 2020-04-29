@@ -208,17 +208,17 @@ a:focus {
 }
 ```
 
-<!--
-
-
 ---
 
-#### Day 09
+#### Day 09 Ensuring the image is responsive
 
 ```css
+img {
+  max-width: 100%;
+}
 ```
 
-```css
+<!-- ```css
 ```
 
 ```css
