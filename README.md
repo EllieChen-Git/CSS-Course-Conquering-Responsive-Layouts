@@ -218,7 +218,33 @@ img {
 }
 ```
 
-<!-- ```css
+---
+
+#### Day 12 Navigation with Flex
+
+Method 1:
+
+```html
+<nav class="nav">
+  <ul class="nav__list">
+    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+    <li class="nav__item nav__item--push-right">
+      <!-- Added a new class 'nav__item--push-right' here -->
+      <a href="#" class="nav__link">Sign In</a>
+    </li>
+    <li class="nav__item">
+      <a href="#" class="nav__link nav__link--button">Sign up</a>
+    </li>
+  </ul>
+</nav>
+```
+
+```css
+.nav__item--push-right {
+  margin-left: auto;
+}
 ```
 
 ```css
@@ -250,9 +276,6 @@ img {
 
 ```css
 ```
-
-```css
-``` -->
 
 ---
 
