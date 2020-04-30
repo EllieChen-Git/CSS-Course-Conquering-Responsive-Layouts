@@ -81,11 +81,14 @@ header {
   display: flex;
 }
 
+.nav__item {
+  margin-right: 1em;
+}
+
 .nav__link {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0 0.5em;
 }
 
 .nav__link--button {
