@@ -222,7 +222,7 @@ img {
 
 #### Day 12 Navigation with Flexbox
 
-Method 1: Add additional class
+Method 1: Add additional class in HTML & CSS
 
 ```html
 <nav class="nav">
@@ -247,13 +247,40 @@ Method 1: Add additional class
 }
 ```
 
-Method 2: Create another nav list
+Method 2: Create another nav list in HTML & use flexbox (dispaly & justify-content) in CSS
 
 ```html
-
+<nav class="nav">
+  <ul class="nav__list">
+    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+  </ul>
+  <ul class="nav__list">
+    <li class="nav__item">
+      <a href="#" class="nav__link">Sign In</a>
+    </li>
+    <li class="nav__item">
+      <a href="#" class="nav__link nav__link--button">Sign up</a>
+    </li>
+  </ul>
+</nav>
 ```
 
 ```css
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Additional styling to fix the spacing issue (right-most nav item)  */
+/* .nav__item {
+  margin-right: 1em;
+} */
+
+.nav__item + .nav__item {
+  margin-left: 1em;
+}
 ```
 
 ```css
