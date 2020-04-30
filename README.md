@@ -220,9 +220,9 @@ img {
 
 ---
 
-#### Day 12 Navigation with Flex
+#### Day 12 Navigation with Flexbox
 
-Method 1:
+Method 1: Add additional class
 
 ```html
 <nav class="nav">
@@ -247,7 +247,10 @@ Method 1:
 }
 ```
 
-```css
+Method 2: Create another nav list
+
+```html
+
 ```
 
 ```css
