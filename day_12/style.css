@@ -76,7 +76,8 @@ header {
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Positioning all the flex items */
+  border: yellow 1px solid; /* For highlighting purpose */
 }
 
 .nav__list {
@@ -84,6 +85,11 @@ header {
   padding: 0;
   list-style: none;
   display: flex;
+  border: pink 3px solid; /* For highlighting purpose */
+}
+
+.nav__list--primary {
+  margin: 0 auto; /* Centering a flex item */
 }
 
 .nav__item + .nav__item {
