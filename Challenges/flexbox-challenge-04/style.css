@@ -1,3 +1,5 @@
+/* Intial set up */
+
 *,
 *::before,
 *::after {
@@ -8,4 +10,94 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
+}
+
+/* Code starts here */
+
+.container {
+  width: 80%;
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+/* Text colours in different section */
+.dark-brown {
+  color: #824936;
+}
+.beige {
+  color: #f3eed9;
+}
+
+/* background: section-two, section-three  */
+.section-two__background {
+  background: black;
+  padding: 70px 0;
+}
+.section-three__background {
+  background: #824936;
+  padding: 70px 0;
+}
+
+/* Header */
+.header {
+  min-height: 660px;
+  background: #f3eed9;
+  display: flex; /* Make a flex container */
+  flex-direction: column; /* <p> on top of <h1> */
+  justify-content: center; /* Vertical aligning text */
+  text-align: center; /* Centering text */
+  padding: 200px;
+}
+
+/* Reduce the gap between <p> & <h1> - header */
+.header h1 {
+  margin-top: 0;
+}
+
+/* section-one */
+.section-one__title {
+  text-align: center;
+}
+.section-one__text {
+  display: flex;
+  flex-direction: row;
+}
+.section-one__text p + p {
+  margin-left: 1em;
+}
+
+/* section-two & section-three*/
+.section-two,
+.section-three {
+  display: flex;
+  color: white;
+}
+
+.section-three__title,
+.section-two__title {
+  margin-top: 0;
+}
+
+/* section-two */
+.section-two__content {
+  width: 100%;
+  margin-right: 50px;
+}
+
+/* section-three */
+.section-three {
+  flex-direction: row-reverse;
+}
+.section-three__content {
+  width: 100%;
+  margin-left: 50px;
+}
+
+/* img */
+img {
+  max-width: 100%;
+  width: 100%;
+  /* Unable to remove image white border */
+  /* outline: none; */
+  /* border: 0; */
 }
