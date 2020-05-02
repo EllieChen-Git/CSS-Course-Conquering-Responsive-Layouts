@@ -283,30 +283,80 @@ Method 2: Create another nav list in HTML & use flexbox (dispaly & justify-conte
 }
 ```
 
-```css
-```
+---
+
+#### Day 13 min(), max(), and clamp()
+
+- Can I use
+
+  - min: https://caniuse.com/#search=min
+  - clamp: https://caniuse.com/#search=clamp
+
+- YouTube Video: [min(), max(), and clamp()](https://www.youtube.com/watch?v=U9VF-4euyRo&feature=youtu.be)
+
+- For example, 'width: 70%; max-width: 600px;' can be simplied as 'width: min(600px, 70%);'
+
+- min(): At any given time, the screen will adjust to which one is smaller - '600px' vs '70% width of the parenet element'.
+  - In smaller screen sizes, it's '70%' width of the parent element.
+  - In bigger screen sizes (when 600px is smaller than '70%' width of the parent element), it's 600px.
 
 ```css
+.content {
+  margin: 0 auto;
+  /* width: 70%;
+  max-width: 600px; */
+  width: min(600px, 70%);
+}
 ```
 
-```css
-```
+- max(): Opposite to min(). At any given time, the screen will adjust to which one is bigger - '600px' vs '70% width of the parenet element'.
 
 ```css
+.content {
+  margin: 0 auto;
+  /* width: min(600px, 70%); */
+  width: max(600px, 70%);
+}
 ```
 
-```css
-```
+- clamp(): Must have 3 values (min, ideal-size, max).
+  - Probably won't use clamp() with the width a lot, as it will cause issues to set a min-width on smaller screens (mobile).
 
 ```css
-```
+/* clamp with width */
+p {
+  background: lightyellow;
+  width: clamp(100px, 50%, 200px);
+}
 
-```css
-```
-
-```css
+/* clamp with font-size */
+h1 {
+  font-size: clamp(1em, 5vw, 3em);
+}
 ```
 
 ---
+
+<!--
+#### Day 14 Flexbox playlist - 39mins
+
+https://www.youtube.com/playlist?list=PL4-IK0AVhVjMSb9c06AjRlTpvxL3otpUd
+
+```css
+```
+
+```css
+```
+
+```css
+```
+
+```css
+```
+
+```css
+```
+
+--- -->
 
 ©2020 Ellie Chen - All Rights Reserved.
