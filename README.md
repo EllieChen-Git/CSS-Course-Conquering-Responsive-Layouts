@@ -451,8 +451,10 @@ h1 {
 }
 ```
 
-```css
-```
+3. Flex layout
+
+- Starter file: https://codepen.io/kevinpowell/pen/xrWKBE
+- Finished file: https://codepen.io/kevinpowell/pen/xrWKBE
 
 ```css
 ```
@@ -462,6 +464,13 @@ h1 {
 
 ```css
 ```
+
+```css
+```
+
+---
+
+#### Day 15
 
 ```css
 ```
