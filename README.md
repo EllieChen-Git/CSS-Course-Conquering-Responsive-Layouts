@@ -453,24 +453,46 @@ h1 {
 
 3. Flex layout
 
-- Starter file: https://codepen.io/kevinpowell/pen/xrWKBE
 - Finished file: https://codepen.io/kevinpowell/pen/xrWKBE
 
 ```css
-```
+/* sales-points container: flex container */
+.sales-points {
+  padding: 12vh 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  /* space-around: Creates space at the beginning & end of the div */
+  flex-direction: column;
+  /* Use media query: small screen (row), big screen (column) */
+}
 
-```css
-```
+@media (min-width: 40rem) {
+  .sales-points {
+    flex-direction: row;
+    /* Use media query: small screen (row), big screen (column) */
+  }
+}
 
-```css
-```
-
-```css
+/* sales-point: flex items */
+.sales-point {
+  flex-basis: 30%;
+  /* Simlar to width: 30% */
+}
 ```
 
 ---
 
 #### Day 15
+
+```css
+```
+
+```css
+```
+
+```css
+```
 
 ```css
 ```

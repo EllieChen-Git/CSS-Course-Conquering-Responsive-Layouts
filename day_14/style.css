@@ -51,7 +51,7 @@ p span {
 .hero {
   background-color: #444;
   background-image: url(//unsplash.it/1000/600);
-  /* Randomly generate image from unsplash */
+  /* Randomly generate image from */
   background-blend-mode: multiply;
   background-size: cover;
   height: 100vh;
@@ -59,16 +59,18 @@ p span {
   color: white;
 
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column; /* Change direction from 'row' to 'column' */
+  align-items: center; /* Horizontally align */
+  justify-content: center; /* Vertically align */
 }
 
+/* sales-points container: flex container */
 .sales-points {
   padding: 12vh 0;
   text-align: center;
   display: flex;
   justify-content: space-around;
+  /* space-around: Creates space at the beginning & end of the div */
   flex-direction: column;
 }
 
@@ -78,8 +80,10 @@ p span {
   }
 }
 
+/* sales-point: flex items */
 .sales-point {
   flex-basis: 30%;
+  /* Simlar to width: 30% */
 }
 
 .cta {
@@ -87,8 +91,8 @@ p span {
   background-size: cover;
   padding: 10vh 0;
   color: white;
-  display: flex;
-  justify-content: flex-end;
+  display: flex; /* flex container */
+  justify-content: flex-end; /* Move to the right of the screen */
 }
 
 .cta-text {
