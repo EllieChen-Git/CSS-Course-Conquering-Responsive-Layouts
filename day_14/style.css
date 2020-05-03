@@ -1,0 +1,44 @@
+/* 
+////// For this challenge ///////
+
+- All text is in the text.md file
+
+// Requirements
+   1. Get all the navigation items next to one another
+   2. Add a space between all the items
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+
+.container {
+  background: pink;
+  height: 50vh;
+  width: 50vw;
+  padding: 0.5em;
+  margin: 25vh auto 0;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.item {
+  background: lightyellow;
+  color: rgb(87, 30, 87);
+  margin: 0.5em;
+}
+
+.big {
+  font-size: 2em;
+}

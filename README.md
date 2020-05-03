@@ -337,10 +337,70 @@ h1 {
 
 ---
 
-<!--
-#### Day 14 Flexbox playlist - 39mins
+#### Day 14 More on Flexbox
 
-https://www.youtube.com/playlist?list=PL4-IK0AVhVjMSb9c06AjRlTpvxL3otpUd
+- YouTube Video: [Flexbox Tutorial Playlist](https://www.youtube.com/playlist?list=PL4-IK0AVhVjMSb9c06AjRlTpvxL3otpUd)
+
+```css
+/* Vertically centre a div in your screen */
+.container {
+  margin: 25vh auto 0;
+  /* top: 25vh, bottom: 0, right/left: auto */
+  height: 50vh;
+  width: 50vw;
+}
+```
+
+1. Flex containers
+
+- 'display: flex': If you don't turn the div into a flex container, by default it will display the children divs in columns.
+
+- flex-direction (default: row): Once you turn a div into a flex container (without specifying the 'flex-direction'), the children divs (now as 'flex items') will be displayed in rows.
+
+- flex-flow: Shorthand for 'flex-direction' & 'flex-wrap'
+
+- justify-content (default: 'flex-start'): based on the main axis (on rows if 'flex-direction': row, on columns if 'flex-direction: column')
+
+- align-items (default: 'stretch'): based on the cross axis
+
+```css
+.container {
+  display: flex;
+  flex-direction: row; /* row (by default) */
+  flex-wrap: nowrap; /* nowrap (by default) */
+
+  /* Shorthand for 'flex-direction' & 'flex-wrap': flex-flow */
+  flex-flow: row nowrap;
+
+  justify-content: flex-start; /* flex-start (by default) */
+  align-items: stretch; /* stretch (by default) */
+}
+```
+
+- align-items (baseline): Useful when flex items have different 'font-size' or sidebar
+
+```html
+<div class="container">
+  <div class="item">Flex item 1</div>
+  <div class="item">Flex item 2</div>
+  <div class="item">Flex item 3</div>
+  <div class="item big">Flex item 4</div>
+</div>
+```
+
+```css
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+```
+
+- align-content:
+  - cross axis
+  - Only useful when you have multi-line content
+  - Will overwrite 'align-items'
 
 ```css
 ```
@@ -348,15 +408,6 @@ https://www.youtube.com/playlist?list=PL4-IK0AVhVjMSb9c06AjRlTpvxL3otpUd
 ```css
 ```
 
-```css
-```
-
-```css
-```
-
-```css
-```
-
---- -->
+---
 
 ©2020 Ellie Chen - All Rights Reserved.
