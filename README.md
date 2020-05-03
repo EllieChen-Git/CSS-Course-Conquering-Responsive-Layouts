@@ -359,9 +359,9 @@ h1 {
 
 - flex-flow: Shorthand for 'flex-direction' & 'flex-wrap'
 
-- justify-content (default: 'flex-start'): based on the main axis (on rows if 'flex-direction': row, on columns if 'flex-direction: column')
+- justify-content (default: 'flex-start'): aligns the flexible container's items when the items do not use all available space on the main-axis (on rows if 'flex-direction': row, on columns if 'flex-direction: column')
 
-- align-items (default: 'stretch'): based on the cross axis
+- align-items (default: 'stretch'): Specifies the default alignment for items inside the flexible container (based on the cross axis).
 
 ```css
 .container {
@@ -397,10 +397,80 @@ h1 {
 }
 ```
 
-- align-content:
-  - cross axis
-  - Only useful when you have multi-line content
+- align-content (default: stretch): Modifies the behaviour of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines.
+  - cross-axis
+  - Only useful when you have multi-line content ( multiple lines of items)
   - Will overwrite 'align-items'
+
+2. Flex items
+
+- flex-grow (default: 0): Takes up the available space. If set to 0, will stay as the 'flex-basis' size.
+- flex-shrink (default: 1): Specifies how the item will shrink relative to the rest of the flexible items inside the same container.
+- flex-basis: More like a max-width (will shrink if screen sizes become smaller)
+- flex (default: 0 1 auto): sets the flexible length on flexible items and is a shorthand for 'flex-grow', 'flex-shrink' and 'flex-basis'. If the element is not a flexible item, the flex property has no effect.
+
+```css
+.one {
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: 50px;
+
+  /* Shorthand */
+  flex: 2 1 50px;
+
+  /* Further Shorthand */
+  flex: 50px;
+  /* Same as 'flex: 0 1 50px;' because 'flex-grow' and 'flex-shrink' will be set to '1' by default */
+}
+```
+
+- align-self (default: auto - The element inherits its parent container's align-items property, or "stretch" if it has no parent container): specifies the alignment for the selected item inside the flexible container.
+
+```css
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+}
+
+.two {
+  align-self: flex-end;
+}
+```
+
+- Order (default: 0): Specifies the order of a flexible item relative to the rest of the flexible items inside the same container. If the element is not a flexible item, the order property has no effect.
+
+```css
+.two {
+  order: 1;
+  /* Item 2 will go to the end, as item 1 and 3 doesn't have an order on it */
+  order: 0;
+  /* Item 2 will go to its naturally nesting place */
+  order: -1;
+  /* Item 2 will go to the beginning, as item 1 and 3 doesn't have an order on it */
+}
+```
+
+```css
+```
+
+```css
+```
+
+```css
+```
+
+```css
+```
+
+```css
+```
+
+```css
+```
+
+```css
+```
 
 ```css
 ```

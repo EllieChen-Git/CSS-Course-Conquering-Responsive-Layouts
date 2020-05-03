@@ -29,8 +29,7 @@ body {
 
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: baseline;
+  align-items: flex-start;
 }
 
 .item {
@@ -39,6 +38,22 @@ body {
   margin: 0.5em;
 }
 
-.big {
-  font-size: 2em;
+.one {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50px;
+}
+
+.two {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50px;
+  align-self: flex-end;
+  order: -1;
+}
+
+.three {
+  flex-grow: 3;
+  flex-shrink: 3;
+  flex-basis: 50px;
 }
