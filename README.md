@@ -584,7 +584,16 @@ Additional Reading: [The 100% correct way to do CSS breakpoints](https://www.fre
 }
 ```
 
-```css
+---
+
+#### Day 17 Meta Viewport Tag
+
+- Meta Viewport Tag: to ensure that your website is responsive
+
+```html
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 ```
 
 ```css
