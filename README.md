@@ -483,9 +483,9 @@ h1 {
 
 ---
 
-#### Day 15 Media Query
+#### Day 15 Media Query Basics
 
-- Use '@media (min-width:)' for mobile first design
+- Use '@media (min-width:)' for mobile-first design
 - Order is important: from smallest min-width to biggest min-width
 
 ```css
@@ -531,7 +531,57 @@ h1 {
 }
 ```
 
+---
+
+#### Day 16 Media Query Breakpoints
+
+How to set the breakpoints:
+
+1. When the website layout starts to break: based breakpoints on content, not devices
+2. Find the balance of breakpoints for the whole page (You don't want to set different breakpoints for different sections on the page)
+3. Keep it simple (1~2 breakpoints should be enough). Don't over-exhaust yourself.
+4. Commonly-used breakpoints: 600px, 960px (but still, refer to point 1, it really depends on how your site looks)
+
+Additional Reading: [The 100% correct way to do CSS breakpoints](https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/)
+
+- media query is always a range.
+- your website’s CSS has a shelf life of about three years
+
 ```css
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
+/* usage */
+.my-box {
+  padding: 10px;
+
+  @include for-desktop-up {
+    padding: 20px;
+  }
+}
 ```
 
 ```css
