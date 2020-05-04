@@ -483,12 +483,52 @@ h1 {
 
 ---
 
-#### Day 15
+#### Day 15 Media Query
+
+- Use '@media (min-width:)' for mobile first design
+- Order is important: from smallest min-width to biggest min-width
 
 ```css
+/* 600px or bigger */
+/* Mobile first */
+@media (min-width: 600px) {
+  .example {
+    background: pink;
+  }
+}
+
+/* 600px or smaller */
+/* Desktop first */
+@media (max-width: 600px) {
+  .example {
+    background: green;
+  }
+}
 ```
 
+- Refer to changes in Day-12 folder
+
 ```css
+/* max-width: Desktop first lol */
+@media (max-width: 600px) {
+  .row {
+    display: block;
+    /* Change rows from 'display: flex' to 'display: blocks' */
+  }
+
+  /* Change the width of all child elements to 100% */
+  .hero__text,
+  .hero__img,
+  .primary-content,
+  .sidebar {
+    width: 100%;
+  }
+
+  /* Add margin-top on the 1st child element */
+  .hero__img {
+    margin-top: 2em;
+  }
+}
 ```
 
 ```css

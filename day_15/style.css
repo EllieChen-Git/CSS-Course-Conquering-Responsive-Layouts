@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,600");
+
+* {
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-size: 1.1rem;
+}
+
+.example {
+  width: 90%;
+  margin: 5em auto;
+  background: steelblue;
+  padding: 10em 0;
+}
+
+/* 600px or bigger */
+/* Mobile first */
+@media (min-width: 600px) {
+  .example {
+    background: pink;
+  }
+}
+
+/* 600px or smaller */
+/* Desktop first */
+/* @media (max-width: 600px) {
+  .example {
+    background: green;
+  }
+} */
