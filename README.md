@@ -210,16 +210,6 @@ a:focus {
 
 ---
 
-#### Day 09 Ensuring the image is responsive
-
-```css
-img {
-  max-width: 100%;
-}
-```
-
----
-
 #### Day 12 Navigation with Flexbox
 
 Method 1: Add additional class in HTML & CSS
@@ -596,8 +586,67 @@ Additional Reading: [The 100% correct way to do CSS breakpoints](https://www.fre
 </head>
 ```
 
+---
+
+#### Day 18 Flexbox challenge #4 - Solution & Common Practices
+
+- Body: 'margin: 0' and font styles
+
 ```css
+body {
+  margin: 0;
+  /* Body font is usually the one you use in most of your paragraphs */
+  /* (i.e. Font 4 on design) in this case */
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
 ```
+
+- Images (set max-width to ensure responsive images): Images will shrink in smaller screens, but not stratch in bigger screens.
+
+```css
+/* Make images responsive: */
+/* Images will shrink in smaller screens, but not stratch in bigger screens */
+img {
+  max-width: 100%;
+}
+```
+
+- Remove margins on bigger heading (h1 & h2): margin: 0;
+
+```css
+h1,
+h2 {
+  margin: 0;
+  /* Or at least remove the margin-top */
+  margin-top: 0;
+}
+```
+
+- When setting big font sizes, remember to bring 'line-height' in.
+
+```css
+h1,
+h2 {
+  line-height: 1.1;
+}
+
+.intro__title {
+  font-size: 60px;
+}
+```
+
+- In general, the smallest screen size is 320px (iphone 5). So we need a media query to make sure that our h1 heading size looks ok on mobile.
+
+```css
+/* Alternatively, use 'rem' on big headings */
+.intro__title {
+  font-size: 3rem;
+}
+```
+
+---
 
 ```css
 ```
