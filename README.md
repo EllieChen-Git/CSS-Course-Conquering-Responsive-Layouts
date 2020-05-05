@@ -2,19 +2,13 @@
 
 - **Author: Kevin Powell**
 - **Course**: [Conquering Responsive Layout 21-Day Challenge](https://courses.kevinpowell.co/courses/conquering-responsive-layouts/)
-<!-- - **Written Material**:
-- **Repo**:
-- **Topics covered**: -->
+- **Topics covered**: CSS basics, common & best practices, box-sizing, flexbox, media query, CSS units: 1. em vs rem, 2. vh, vw, vmin, vmax, 3. min(), max() and clamp().
 
 ---
 
-## Concepts
+## Lessons
 
 - **HTML/CSS by default is responsive**: It's us (as developers) to insert some CSS code incorrectly that takes away the responsiveness.
-
----
-
-## Lesson
 
 #### Day 01 - 01 Using percentages for widths(Percentage vs Fixed Widths)
 
@@ -29,7 +23,7 @@
 }
 ```
 
-#### Day 01 - 02 Avoiding to set heights(Paddings vs Fixed Heights)
+#### Day 01 - 02 Avoiding setting heights(Paddings vs Fixed Heights)
 
 - Use 'padding' instead of 'fixed heights'.
 
@@ -43,7 +37,7 @@
 
 - **em**
 
-  - 'em' always looks for the font size of the parent element. If you didn't set one, by default the browser’s font size is 16px. So if you set 'padding: 5em', it will be '80px (16px \* 5)'.
+  - 'em' always looks for the font size of the parent element. If you didn't set one, by default the browser’s font size is 16px. Therefore, if you set 'padding: 5em', it will be '80px (16px \* 5)'.
   - However, if you use 'em' for properties other than font-size (e.g. margins, paddings, widths etc), it looks at the font-size of 'that element (itself)'.
 
     ```css
@@ -237,7 +231,7 @@ Method 1: Add additional class in HTML & CSS
 }
 ```
 
-Method 2: Create another nav list in HTML & use flexbox (dispaly & justify-content) in CSS
+Method 2: Create another nav list in HTML & use flexbox (display & justify-content) in CSS
 
 ```html
 <nav class="nav">
@@ -467,7 +461,7 @@ h1 {
 /* sales-point: flex items */
 .sales-point {
   flex-basis: 30%;
-  /* Simlar to width: 30% */
+  /* Similar to width: 30% */
 }
 ```
 
@@ -529,7 +523,7 @@ How to set the breakpoints:
 
 1. When the website layout starts to break: based breakpoints on content, not devices
 2. Find the balance of breakpoints for the whole page (You don't want to set different breakpoints for different sections on the page)
-3. Keep it simple (1~2 breakpoints should be enough). Don't over-exhaust yourself.
+3. Keep it simple (1~2 breakpoints should be enough). Don't over-exhaust yourself. The more breakpoints, the harder to maintain your code.
 4. Commonly-used breakpoints: 600px, 960px (but still, refer to point 1, it really depends on how your site looks)
 
 Additional Reading: [The 100% correct way to do CSS breakpoints](https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/)
@@ -603,7 +597,7 @@ body {
 }
 ```
 
-- Images (set max-width to ensure responsive images): Images will shrink in smaller screens, but not stratch in bigger screens.
+- Images (set max-width to ensure responsive images): Images will shrink in smaller screens, but not stretch in bigger screens.
 
 ```css
 /* Make images responsive: */
@@ -637,17 +631,79 @@ h2 {
 }
 ```
 
-- In general, the smallest screen size is 320px (iphone 5). So we need a media query to make sure that our h1 heading size looks ok on mobile.
+- In general, the smallest screen size is 320px (iPhone 5), so we need a media query to make sure that our h1 heading size looks ok on mobile.
 
 ```css
-/* Alternatively, use 'rem' on big headings */
 .intro__title {
   font-size: 3rem;
 }
+
+/* Mobile first */
+@media (min-width: 800px) {
+  .intro__title {
+    font-size: 3.75rem;
+  }
+}
 ```
+
+- Always remember to add a fixed 'max-width' on the container to avoid text stretch over the screen (common issues in bigger screens)
+
+```css
+.container {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1128px;
+}
+```
+
+- Setting 'width: 100%' of 'flex items', so the child elements will display equally no matter the content size of the HTML elements.
+
+```css
+/* Mobile first */
+@media (min-width: 800px) {
+  .row {
+    display: flex;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .col + .col {
+    margin-left: 5em;
+  }
+}
+```
+
+- Setting min-height for wrapper & vertically align the heading
+
+  - Min-height takes precedence over both height and max-height ensuring that you get the result you want and that it isn't accidentally overwritten later by a height or max-height call.
+
+  - If you used 'height', then the wrapper will always remain that height even if there's more content. The content will overflow the wrapper and overlap with the footer. The wrapper will not expand to contain the extra content and the footer will not be pushed further down.
+
+```css
+.intro {
+  min-height: 660px;
+  /* Common: header occupies whole screen regardless of the devices */
+  /* min-height: 100vh; */
+  display: flex;
+  align-items: center;
+}
+```
+
+<!-- ---
+
+#### CSS Variables - An introduction to CSS custom properties
+
+- YouTube Video: [CSS Variables - An introduction to CSS custom properties](https://www.youtube.com/watch?v=PHO6TBq_auI&feature=youtu.be)
 
 ---
 
+#### Day 19 Mobile navigation challenge
+
+```css
+```
+
 ```css
 ```
 
@@ -656,6 +712,21 @@ h2 {
 
 ```css
 ```
+
+```css
+```
+
+```css
+```
+
+```css
+```
+
+```css
+```
+
+```css
+``` -->
 
 ---
 
