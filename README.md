@@ -768,7 +768,27 @@ ul {
 }
 ```
 
+- Desktop nav bar style 1
+
 ```css
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* Use flex-end to push all the nav items to the right of the screen */
+  position: relative;
+}
+
+.nav__item {
+  /* Use margin on left to spread the items out */
+  margin: 0 0 0 1.5em;
+  /* top-right-bottom-left */
+}
+
+/* Can also add this to centre the primary nav-list */
+.nav__list--primary {
+  margin: 0 auto;
+}
 ```
 
 ```css

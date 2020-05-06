@@ -207,6 +207,26 @@ header {
   .nav {
     visibility: visible;
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+    position: relative;
+  }
+
+  .nav__list {
+    display: flex;
+    /* Remove the margin on mobile setting */
+    margin: 0;
+  }
+
+  .nav__list--primary {
+    margin: 0 auto;
+  }
+
+  .nav__item {
+    /* Remove the margin on mobile setting */
+    margin: 0 0 0 1.5em;
+    /* top-right-bottom-left */
   }
 
   .row {
