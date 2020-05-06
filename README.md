@@ -726,17 +726,46 @@ body {
 ```css
 /* How to remove list style */
 ul {
-  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 ```
 
-```css
-```
+- Links by default is inline element, so margin-top and margin-bottom won't work on them
 
 ```css
+.nav__item {
+  margin-top: 0.75em;
+  /* Do it here */
+}
+
+.nav__link {
+  /* not here */
+}
 ```
 
+- Hover & focus effects on nav items
+
 ```css
+.nav__link:hover,
+.nav__link:focus {
+  opacity: 0.65;
+}
+```
+
+- Style nav-link to button
+
+```css
+.nav__link--button {
+  /* right-left padding is bigger than top-bottom padding */
+  padding: 0.25em 0.75em;
+  /* Reverse text-colour & background colour */
+  background: #fff;
+  color: #23424a;
+  /* border-radius: 100px */
+  border-radius: 100px;
+}
 ```
 
 ```css
