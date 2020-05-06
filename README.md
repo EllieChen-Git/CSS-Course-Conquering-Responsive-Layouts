@@ -691,11 +691,33 @@ h2 {
 }
 ```
 
-<!-- ---
+---
 
 #### CSS Variables - An introduction to CSS custom properties
 
 - YouTube Video: [CSS Variables - An introduction to CSS custom properties](https://www.youtube.com/watch?v=PHO6TBq_auI&feature=youtu.be)
+- Definition: Global css properties that can be used throughout the site.
+- Syntax: --varaible_namee: value (usually declare in the root selector)
+
+```css
+:root {
+  --dark-colour: #00bd9d;
+  /* Syntax: --varaible_name: value */
+
+  --ff-ss: "Merriweather Sans", sans-serif;
+
+  --mw: 800px;
+  --w: 90%;
+  --gap: 2em;
+}
+
+body {
+  color: var(--dark-colour);
+  /* Syntax: css_property: var(--varaible_name)*/
+  color: var(--dark-colour, steelblue);
+  /* Can also add a fallback after it */
+}
+```
 
 ---
 
@@ -724,9 +746,6 @@ h2 {
 
 ```css
 ```
-
-```css
-``` -->
 
 ---
 
