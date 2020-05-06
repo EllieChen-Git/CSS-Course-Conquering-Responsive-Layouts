@@ -68,6 +68,33 @@ header {
   width: 100%;
 }
 
+.nav__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+.nav__list + .nav__list {
+  margin-top: 75px;
+}
+
+.nav__item + .nav__item {
+  margin-top: 25px;
+}
+
+.nav__link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav__link--button {
+  color: #23424a;
+  background: white;
+  border-radius: 50px;
+  padding: 5px;
+}
+
 .nav-toggle {
   cursor: pointer;
   border: 0;
@@ -169,12 +196,17 @@ header {
   .nav {
     visibility: visible;
     display: flex;
+    justify-content: space-between;
     height: auto;
   }
 
   .row {
     display: flex;
     justify-content: space-between;
+  }
+
+  .nav__list {
+    flex-direction: row;
   }
 
   .hero__text {

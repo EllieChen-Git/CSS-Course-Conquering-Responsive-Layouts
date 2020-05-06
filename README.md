@@ -724,6 +724,10 @@ body {
 #### Day 19 Mobile navigation challenge
 
 ```css
+/* How to remove list style */
+ul {
+  list-style-type: none;
+}
 ```
 
 ```css
