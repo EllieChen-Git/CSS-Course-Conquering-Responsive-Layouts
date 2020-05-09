@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,600");
+
+* {
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
+:root {
+  --black: #2e323f;
+  --dark-grey: #3b4050;
+  --light-grey: #6f737f;
+  --white: #fff;
+  --beige: #a59678;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  color: var(--black);
+  font-size: 1.1rem;
+}
