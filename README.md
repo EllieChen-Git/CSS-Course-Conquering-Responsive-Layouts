@@ -6,6 +6,14 @@
 
 ---
 
+- **My Solution to the Final Challenge (Day 21)**
+
+  - **Codepen**: https://codepen.io/elliechen_etc/pen/oNjdNro
+  - **Demo**:
+    ![demo](./docs/day-21-final-challenge.gif)
+
+---
+
 ## Lessons
 
 - **HTML by default (before we write any CSS) is responsive**: It's us (as developers) to insert some CSS code incorrectly that takes away the responsiveness.
@@ -696,13 +704,13 @@ h2 {
 #### CSS Variables - An introduction to CSS custom properties
 
 - YouTube Video: [CSS Variables - An introduction to CSS custom properties](https://www.youtube.com/watch?v=PHO6TBq_auI&feature=youtu.be)
-- Definition: Global css properties that can be used throughout the site.
-- Syntax: --varaible_namee: value (usually declare in the root selector)
+- Definition: Global CSS properties that can be used throughout the site.
+- Syntax: --variable_name: value (usually declare in the root selector)
 
 ```css
 :root {
   --dark-colour: #00bd9d;
-  /* Syntax: --varaible_name: value */
+  /* Syntax: --variable_name: value */
 
   --ff-ss: "Merriweather Sans", sans-serif;
 
@@ -713,7 +721,7 @@ h2 {
 
 body {
   color: var(--dark-colour);
-  /* Syntax: css_property: var(--varaible_name)*/
+  /* Syntax: css_property: var(--variable_name)*/
   color: var(--dark-colour, steelblue);
   /* Can also add a fallback after it */
 }
@@ -733,7 +741,7 @@ ul {
 }
 ```
 
-- Links by default is inline element, so margin-top and margin-bottom won't work on them
+- Links by default is an inline element, so margin-top and margin-bottom won't work on them
 
 ```css
 .nav__item {
@@ -769,7 +777,7 @@ ul {
 }
 ```
 
-- Desktop nav bar style
+- Desktop navbar style
 
 ```css
 .nav {
@@ -792,11 +800,11 @@ ul {
 }
 ```
 
+---
+
 #### Day 21 The Final Challenge
 
-Steps
-
-Done
+Steps:
 
 - Create HTML structure & content
 - Set CSS box-sizing
@@ -805,40 +813,16 @@ Done
 - Set CSS containers & apply to HTML: responsive width (%), fixed max-width, center (margin)
 - Set CSS image properties: set max-width to ensure responsive images
 - Set background colours & text colours for each section
-
-In progress
-
 - Start mobile-first design
-- After finishing mobile design, then start table & desktop design
+- After finishing mobile design, then start doing table & desktop design
+- After finishing all the designs, tackle responsiveness on extremely small screens (e.g. iPhone 5 - 320 px)
 
-- Center Hero: display-flex, align-items & set fixed min-height.
+---
 
-```css
-.hero-container {
-  display: flex;
-  align-items: center;
-  min-height: 450px;
-}
-```
+#### Additional Resources
 
-```css
-```
-
-```css
-```
-
-```css
-```
-
-```css
-```
-
-## <!-- ---
-
-#### Resource
-
-- Free: Kevin Powell - [HTML & CSS Crash Course](https://scrimba.com/course/ghtmlcss)
-- \$39: Kevin Powell - [Responsive Web Design Bootcamp](https://scrimba.com/course/gresponsive/) -->
+- Kevin Powell - [HTML & CSS Crash Course](https://scrimba.com/course/ghtmlcss) (Free)
+- Kevin Powell - [Responsive Web Design Bootcamp](https://scrimba.com/course/gresponsive/) (\$39)
 
 ---
 
