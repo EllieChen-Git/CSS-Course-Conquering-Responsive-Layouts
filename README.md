@@ -8,7 +8,7 @@
 
 ## Lessons
 
-- **HTML/CSS by default is responsive**: It's us (as developers) to insert some CSS code incorrectly that takes away the responsiveness.
+- **HTML by default (before we write any CSS) is responsive**: It's us (as developers) to insert some CSS code incorrectly that takes away the responsiveness.
 
 #### Day 01 - 01 Using percentages for widths(Percentage vs Fixed Widths)
 
@@ -721,10 +721,11 @@ body {
 
 ---
 
-#### Day 19 Mobile navigation challenge
+#### Day 19 & 20 Mobile navigation challenge
+
+- How to remove list style
 
 ```css
-/* How to remove list style */
 ul {
   margin: 0;
   padding: 0;
@@ -736,8 +737,8 @@ ul {
 
 ```css
 .nav__item {
-  margin-top: 0.75em;
   /* Do it here */
+  margin-top: 0.75em;
 }
 
 .nav__link {
@@ -745,7 +746,7 @@ ul {
 }
 ```
 
-- Hover & focus effects on nav items
+- Create simple hover & focus effects on nav items
 
 ```css
 .nav__link:hover,
@@ -754,7 +755,7 @@ ul {
 }
 ```
 
-- Style nav-link to button
+- Style a nav-link item as button
 
 ```css
 .nav__link--button {
@@ -768,7 +769,7 @@ ul {
 }
 ```
 
-- Desktop nav bar style 1
+- Desktop nav bar style
 
 ```css
 .nav {
@@ -791,14 +792,25 @@ ul {
 }
 ```
 
-```css
-```
+<!-- ---
+
+#### Day 21 The Final Challenge
 
 ```css
 ```
 
 ```css
 ```
+
+```css
+```
+
+---
+
+#### Resource
+
+- Free: Kevin Powell - [HTML & CSS Crash Course](https://scrimba.com/course/ghtmlcss)
+- \$39: Kevin Powell - [Responsive Web Design Bootcamp](https://scrimba.com/course/gresponsive/) -->
 
 ---
 
