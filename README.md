@@ -811,8 +811,14 @@ In progress
 - Start mobile-first design
 - After finishing mobile design, then start table & desktop design
 
-<!-- ---
+- Center Hero: display-flex, align-items & set fixed min-height.
+
 ```css
+.hero-container {
+  display: flex;
+  align-items: center;
+  min-height: 450px;
+}
 ```
 
 ```css
@@ -821,7 +827,13 @@ In progress
 ```css
 ```
 
----
+```css
+```
+
+```css
+```
+
+## <!-- ---
 
 #### Resource
 

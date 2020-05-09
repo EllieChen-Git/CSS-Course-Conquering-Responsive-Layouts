@@ -52,8 +52,6 @@ nav {
   padding: 0.5em 0;
   display: flex;
   justify-content: space-between;
-  /* Need to align menu items so that sign-up btn style would work */
-  align-items: center;
 }
 
 .nav-menu {
@@ -86,6 +84,7 @@ nav {
 .hero {
   background: var(--dark-grey);
   color: var(--white);
+  padding: 2em 0;
 }
 
 .hero p {
@@ -98,6 +97,10 @@ nav {
 
 span {
   color: var(--beige);
+}
+
+.col {
+  width: 100%;
 }
 
 /* Section One */
@@ -138,3 +141,18 @@ footer h5 {
 footer p {
   color: var(--light-grey);
 }
+
+@media (min-width: 700px) {
+  .hero-container {
+    display: flex;
+    align-items: center;
+    min-height: 450px;
+  }
+  .hero-container .col + .col {
+    margin-left: 3em;
+  }
+}
+
+/* @media (min-width: 1000px) {
+
+} */
