@@ -48,6 +48,39 @@ nav {
   background: var(--black);
   color: var(--white);
 }
+.nav-container {
+  padding: 0.5em 0;
+  display: flex;
+  justify-content: space-between;
+  /* Need to align menu items so that sign-up btn style would work */
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+/* Align nav-logo with nav-menu */
+.nav-logo p {
+  margin-bottom: 0;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-list li + li {
+  margin-left: 1em;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--beige);
+  border-radius: 100px;
+  padding: 0.05em 1em;
+}
 
 /* Hero */
 .hero {
