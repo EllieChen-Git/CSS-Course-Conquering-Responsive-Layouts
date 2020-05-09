@@ -792,10 +792,26 @@ ul {
 }
 ```
 
-<!-- ---
-
 #### Day 21 The Final Challenge
 
+Steps
+
+Done
+
+- Create HTML structure & content
+- Set CSS box-sizing
+- Create CSS variables for colour consistency
+- Set CSS body properties (fonts, margin, paragraph text colour)
+- Set CSS containers & apply to HTML: responsive width (%), fixed max-width, center (margin)
+- Set CSS image properties: set max-width to ensure responsive images
+- Set background colours & text colours for each section
+
+In progress
+
+- Start mobile-first design
+- After finishing mobile design, then start table & desktop design
+
+<!-- ---
 ```css
 ```
 

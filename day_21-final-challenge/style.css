@@ -8,13 +8,100 @@
 :root {
   --black: #2e323f;
   --dark-grey: #3b4050;
-  --light-grey: #6f737f;
+  /* --light-grey: #6f737f; */
+  --light-grey: #e7e7e7;
   --white: #fff;
   --beige: #a59678;
+  /* --light-beige: #f3eed9; */
 }
 
 body {
   font-family: "Oswald", sans-serif;
   color: var(--black);
   font-size: 1.1rem;
+  margin: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Set container: responsive width (%), fixed max-width, center (margin) */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Remove gap between nav & hero */
+ul {
+  margin: 0;
+}
+
+/* Image: set max-width to ensure responsive images */
+img {
+  max-width: 100%;
+}
+
+/* Nav */
+nav {
+  background: var(--black);
+  color: var(--white);
+}
+
+/* Hero */
+.hero {
+  background: var(--dark-grey);
+  color: var(--white);
+}
+
+.hero p {
+  color: var(--light-grey);
+}
+
+.hero a {
+  color: var(--white);
+}
+
+span {
+  color: var(--beige);
+}
+
+/* Section One */
+.section-one {
+  background: var(--light-grey);
+}
+
+.section-one h3 {
+  color: var(--beige);
+}
+
+/* Section Two */
+
+/* Remove gap between section-two & footer */
+.section-two p {
+  margin: 0;
+}
+
+.section__main h2 {
+  color: var(--beige);
+}
+
+.section__sidebar {
+  color: var(--white);
+  background: var(--dark-grey);
+}
+
+/* Footer */
+footer {
+  color: var(--white);
+  background: var(--dark-grey);
+}
+
+footer h5 {
+  color: var(--beige);
+}
+
+footer p {
+  color: var(--light-grey);
 }
